@@ -1,9 +1,9 @@
 class Cow < Formula
   desc "Copy-on-write workspace manager for parallel development"
   homepage "https://github.com/joeinnes/cow"
-  url "https://github.com/joeinnes/cow/releases/download/v0.1.1/cow-0.1.1.tar.gz"
-  sha256 "9406b185ebe170472a5443127679c802f530982af6625c3d2cec8cb0ff8c2670"
-  version "0.1.1"
+  url "https://github.com/joeinnes/cow/releases/download/v0.1.2/cow-0.1.2.tar.gz"
+  sha256 "0434db8c97fb1126babebfb8ba8cb4d82d4b086ba1f8e64e403b3a7970912653"
+  version "0.1.2"
   license "MIT"
 
   def install
