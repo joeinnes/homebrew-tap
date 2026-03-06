@@ -6,8 +6,6 @@ class Pig < Formula
   version "0.1.0"
   license "MIT"
 
-  depends_on "node@22"
-
   def install
     bin.install "pig"
   end
