@@ -16,8 +16,10 @@ class Herd < Formula
 
     app_contents = buildpath/"Herd.app/Contents"
     (app_contents/"MacOS").mkpath
+    (app_contents/"Resources").mkpath
 
     cp "herd/.build/release/Herd", app_contents/"MacOS/Herd"
+    cp "herd/Assets/AppIcon.icns", app_contents/"Resources/AppIcon.icns"
 
     (app_contents/"Info.plist").write <<~EOS
       <?xml version="1.0" encoding="UTF-8"?>
@@ -32,6 +34,8 @@ class Herd < Formula
         <string>Herd</string>
         <key>CFBundleExecutable</key>
         <string>Herd</string>
+        <key>CFBundleIconFile</key>
+        <string>AppIcon</string>
         <key>CFBundleVersion</key>
         <string>#{version}</string>
         <key>CFBundleShortVersionString</key>
