@@ -2,7 +2,7 @@ class Herd < Formula
   desc "Menubar companion for cow — browse and manage pastures from the menu bar"
   homepage "https://github.com/joeinnes/cow"
   url "https://github.com/joeinnes/cow/archive/refs/tags/v0.1.9.tar.gz"
-  sha256 "6dad1274d77627cf74333d2fd3fbb1050a251a0ae5dc8d1b618aa6c654953074"
+  sha256 "c2b5287a88a801c9dcb1f71a00c98b4ddb60bdc54a3ab23057db4c2bb72369c1"
   version "0.1.9"
   license "MIT"
 
