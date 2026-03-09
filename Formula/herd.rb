@@ -9,7 +9,10 @@ class Herd < Formula
   depends_on :macos => :ventura
 
   def install
-    system "swift", "build", "--package-path", "herd", "-c", "release"
+    # --disable-sandbox prevents SPM from using sandbox-exec internally,
+    # which conflicts with Homebrew's own sandbox environment.
+    system "swift", "build", "--package-path", "herd", "-c", "release",
+           "--disable-sandbox"
 
     app_contents = buildpath/"Herd.app/Contents"
     (app_contents/"MacOS").mkpath
