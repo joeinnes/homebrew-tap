@@ -59,16 +59,11 @@ class CowHerd < Formula
 
   def caveats
     <<~EOS
-      Herd is unsigned. To use it:
+      Copy Herd to your Applications folder:
+        cp -r "$(brew --prefix)/opt/cow-herd/Herd.app" /Applications/
 
-        1. Copy it to your Applications folder:
-             cp -r #{prefix}/Herd.app /Applications/
-
-        2. On first launch, right-click Herd.app and choose Open,
-           then click Open in the Gatekeeper prompt.
-
-      Herd requires the cow CLI to be installed:
-        brew install joeinnes/tap/cow
+      Herd is unsigned — right-click → Open on first launch to allow it.
+      Requires: brew install joeinnes/tap/cow
     EOS
   end
 
